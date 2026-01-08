@@ -1,0 +1,42 @@
+body{
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.Todo-container{
+ 
+  padding: 10px 20px;
+  width: 300px;
+  background-color: antiquewhite;
+}
+
+.Todo-header{
+  font-family: monospace;
+  font-size: large;
+  font-weight: 900;
+}
+
+.todo-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-button{
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 13px;
+  border: none;
+  font-weight: bold;
+  background-color: rgb(214, 127, 21);
+}
+.todo-button:hover{
+  
+  cursor: pointer;
+}
+.todo-text{
+  margin-left: 5px;
+}
