@@ -5,6 +5,7 @@ import './App.css'
 import Header from './components/Header'
 import TodoItem from './components/TodoItem'
 import Button from './components/Button'
+import Counter from './components/Counter'
 
 
 
@@ -15,6 +16,7 @@ function App() {
     
     <div className='Todo-container'>
       <Header title = "To DO"/>
+      <Counter/>
       <TodoItem text="Eat"/>
        <TodoItem  complete={true} text="Code"/>
        <TodoItem  text="Sleep"/>
