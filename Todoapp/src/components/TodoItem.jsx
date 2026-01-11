@@ -1,14 +1,21 @@
 import React from "react";
 
-const TodoItem =(props)=>{
-return(
-    <li className="todo-item">
-        <span>
-       {props.complete ? <></>: <input type="checkbox"/>} 
-        <span className="todo-text">{props.text}</span>
-        </span>
-        <p>....</p>
-    </li>
-)
-}
-export default TodoItem
+const TodoItem = (props) => {
+    const { text, complete, onToggle } = props;
+
+    return (
+        <li className={`todo-item ${complete ? "completed" : ""}`}>
+            <span>
+                <input
+                    type="checkbox"
+                    checked={!!complete}
+                    onChange={() => onToggle && onToggle()}
+                />
+                <span className="todo-text">{text}</span>
+            </span>
+            <p>....</p>
+        </li>
+    );
+};
+
+export default TodoItem;
